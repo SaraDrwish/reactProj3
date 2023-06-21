@@ -1,0 +1,48 @@
+.serv{
+    padding: 1rem;
+    margin: 1rem 4rem;
+    display: flex;
+    height: 50vh;
+    position: relative;
+}
+.blur{
+    position: absolute;
+        width: 20rem;
+        height: 20rem;
+        background-color: var(--pep);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        filter: blur(122px);
+        z-index: -4;
+        left: -22%;
+        bottom: 1%;
+ }
+
+ .aesom{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+ }
+ .aesom span{
+    line-height: 1.5;
+  }
+  .aesom > span:nth-child(1) {
+       font-size: 2.8rem;
+       color: var(--black);
+  }
+.aesom >:nth-child(2) {
+      font-size:2.5rem;
+      color: var(--yellow);
+      margin-bottom: 4%;
+}
+.aesom button{
+    width: 30%;
+    margin-top: 11%;
+}
+ .cards{
+    flex: 1;
+ }

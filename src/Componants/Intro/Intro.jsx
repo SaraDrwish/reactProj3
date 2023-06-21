@@ -1,14 +1,12 @@
 import React from 'react'
 import "./intro.css";
+import FlootingDiv from '../FlootingDiv/FlootingDiv';
 import git from "../../img/orange soical icons/light-orng-git-icon.png";
 import insta from "../../img/orange soical icons/ooooinss.png";
 import linkdin from "../../img/orange soical icons/ornglightlinkediniconrext.webp";
 import imoji1 from "../../img/ccnn.png";
-// import imoji2 from "../../img/cn.png";
 import imoji2 from "../../img/lvvvvvo.png";
-// import imoji3 from "../../img/zxzx.png";
 import imoji4 from "../../img/clclcl.png";
-import imoji5 from "../../img/cvcvcv.png";
 
 import img1 from "../../img/r2.jpg"
 
@@ -20,7 +18,7 @@ function Intro() {
         <div className='intro-name'>
           <span> Hi! I Am </span>
           <span> Sara Darwish </span>
-          <span> A web developer with high level of experience , producting the quality work </span>
+          <span> ..  A web developer with high level of experience , producting the quality work  ... ... </span>
         </div> {/* end iintro-name*/}
         <button className='intro-button'>Learn More</button>
 
@@ -39,11 +37,18 @@ function Intro() {
 
         <img className='mainImg' src={img1} alt="img1" />
         
-         <img src={imoji1} alt="img1" />
-         <img src={imoji2} alt="img1" />
-         {/* <img src={imoji3} alt="img1" /> */}
          <img src={imoji4} alt="img1" />
-         <img src={imoji5} alt="img1" />
+         {/* <img src={imoji4} alt="img1" /> */}
+        {/* <img src={imoji5} alt="img1" /> */}
+        
+        <div className='floott'> 
+          <FlootingDiv image={imoji2}  txt1="web"  txt2="developer"  />
+        </div>
+         <div className='floott2'> 
+          <FlootingDiv image={imoji1}  txt1="best design"  txt2="award"  />
+        </div>
+        <div className='blur1'  ></div>
+        <div className=' blur2'  ></div>
          
       </div> {/* end intro-right */}
     

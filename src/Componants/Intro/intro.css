@@ -37,12 +37,9 @@ height: 3rem;
 .intro-left .intro-social{
     display: flex;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 8rem;
     gap: 4rem;
-    /* width: 1rem;
-    height: 1rem; */
-
-    /* justify-content: space-evenly; */
+ 
 }
 .intro-left .intro-social img{
         width: 3rem;
@@ -68,7 +65,7 @@ height: 3rem;
 }
 
 
-
+/* --------   emojeis link  ---------   https: //pluspng.com/png-3518.html    ------- */
 
 .intro-right{
     display: flex;
@@ -87,12 +84,7 @@ height: 3rem;
 .intro-right .mainImg{
     width: 40%;
     height: 50%;
-    /* border-radius: 2rem 2rem 11rem 11rem ;
-    -webkit-border-radius: 2rem 2rem 11rem 11rem ;
-    -moz-border-radius: 2rem 2rem 11rem 11rem ;
-    -ms-border-radius: 2rem 2rem 11rem 11rem ;
-    -o-border-radius: 2rem 2rem 11rem 11rem ; */
-        border-radius: 47% 53% 51% 49% / 75% 30% 70% 25%;
+    border-radius: 47% 53% 51% 49% / 75% 30% 70% 25%;
 }
 
 .intro-right > div:nth-child(1){
@@ -102,7 +94,7 @@ height: 3rem;
        height:33rem;
         position: absolute; 
         right: 14%;
-        top: 6%;
+        top: 1%;
           -webkit-border-radius: 47% 53% 51% 49% / 75% 30% 70% 25% ;
           -moz-border-radius: 47% 53% 51% 49% / 75% 30% 70% 25% ;
            -ms-border-radius: 47% 53% 51% 49% / 75% 30% 70% 25% ;
@@ -114,25 +106,76 @@ height: 3rem;
         -moz-border-radius: 61px 161px 48px 163px;
         border: 36px solid #ffbb30;
         background: linear-gradient(var(--yellow), var(--oreng));
-         width: 22rem;
+        width: 22rem;
         height: 22rem;
 }
 
-.intro-right > img {
-     width: 4rem;
-     height: 4rem;
+.intro-right .floott{
+/* text-align: left;  */
+right: 6%;
+top: 0;
+}
+ 
+.intro-right .floott2 {
+    left: 2%;
+    bottom: 20%;
 }
 
-.intro-right>img:nth-child(7){
+.flootingDiv img{
+    width: 3rem;
+    height: 3rem;
+    padding-right: 1rem;
+}
+
+.intro-right > img {
+     width: 6rem;
+     height: 6rem;
+}
+
+/* .intro-right>img:nth-child(7){
     left: 22%;
-}
-.intro-right>img:nth-child(6) {
+} */
+/* .intro-right>img:nth-child(6) {
     left: 44%;
-    top: 66%;
-}
-.intro-right>img:nth-child(5) {
-    left: 66%;
-}
+    top: 60%;
+} */
+
+/* .intro-right>img:nth-child(5) {
+    left: 10%;
+} */
+
 .intro-right>img:nth-child(4) {
-    top: 22%;
+    top: 0%;
+    left: 4%;
 }
+
+.blur1{
+    position: absolute;
+    width: 22rem;
+    height: 22rem;
+    background-color: var(--pep);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    filter: blur(122px);
+    z-index: -4;
+    right: -6%;
+    top: -8%;
+    -webkit-filter: blur(122px);
+}
+.blur2{
+     position: absolute;
+     width: 26rem;
+     height: 26rem;
+     border-radius: 50%;
+     z-index: -4;
+     background-color: var(--blue);
+     left: -33%;
+     bottom: -11%;
+     filter: blur(99px);
+     -webkit-filter: blur(99px);
+}
+
+

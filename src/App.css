@@ -10,11 +10,40 @@
   --small-shadow:-79px 51px 60px rgpa(0, 0 ,0 , 0.08)
  }
 
+::-moz-selection {
+  background: #f5c32c6f;
+}
+::selection {
+  background: #f5c32c6f;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px var(--oreng);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--oreng);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--oreng);
+}
+
+
  .App{
   padding:  0.5rem 3.5rem ;
   overflow: hidden;
   color: var(--black);
-  }
+  text-transform: capitalize;
+}
+
 
   button{
         border: none;
