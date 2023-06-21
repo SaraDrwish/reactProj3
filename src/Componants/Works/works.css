@@ -1,0 +1,24 @@
+.works{
+display: flex;
+/* justify-content: center; */
+align-items: center;
+padding: 0rem 2rem ;
+height: 80vh;
+}
+.left-works{
+display: flex;
+flex-direction: column;
+}
+.left-works > span:nth-child(1) {
+     font-size: 2.8rem;
+}
+.left-works>span:nth-child(2) {
+    color: var(--oreng);
+    font-size: 3rem;
+    margin-bottom: 3%;
+}
+.works button{
+    width: 35%;
+    margin-top: 9%;
+    /* height: 4%; */
+}

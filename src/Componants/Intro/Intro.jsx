@@ -24,8 +24,8 @@ function Intro() {
 
         <div className='intro-social'>
           <a href="https://github.com/SaraDrwish" target="_blank">  <img src={git} alt="git" /> </a>
-          <a href="https://www.linkedin.com/in/sara-darwish-921341178/" target="blank"> <img src={linkdin} alt="linked" /></a>
           <a href="https://www.instagram.com/so.gado/" target="blank"> <img src={insta} alt="insta" /></a>
+          <a href="https://www.linkedin.com/in/sara-darwish-921341178/" target="blank"> <img src={linkdin} alt="linked" /></a>
         </div> {/* end intro-social */}
 
        </div>  {/* end intro-left */}
@@ -38,8 +38,6 @@ function Intro() {
         <img className='mainImg' src={img1} alt="img1" />
         
          <img src={imoji4} alt="img1" />
-         {/* <img src={imoji4} alt="img1" /> */}
-        {/* <img src={imoji5} alt="img1" /> */}
         
         <div className='floott'> 
           <FlootingDiv image={imoji2}  txt1="web"  txt2="developer"  />

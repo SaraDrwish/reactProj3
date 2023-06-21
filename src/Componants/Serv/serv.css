@@ -1,8 +1,9 @@
 .serv{
     padding: 1rem;
-    margin: 1rem 4rem;
+    margin: 2rem 4rem;
     display: flex;
-    height: 50vh;
+    height: 90vh;
+    padding: 2rem;
     position: relative;
 }
 .blur{
@@ -22,10 +23,12 @@
  }
 
  .aesom{
-    flex: 1;
+    /* flex: 1; */
     display: flex;
+    position: relative;
     flex-direction: column;
     font-weight: bold;
+    /* background-color: aqua; */
  }
  .aesom span{
     line-height: 1.5;
@@ -40,9 +43,32 @@
       margin-bottom: 4%;
 }
 .aesom button{
-    width: 30%;
+    width: 40%;
     margin-top: 11%;
 }
  .cards{
-    flex: 1;
+    position: relative;
+    /* flex: 1; */
+    margin: 1rem;
+    text-align: center;
+    /* background-color: brown; */
  }
+ .cards >*{
+    position: absolute;
+ }
+ .blur3{
+        position: absolute;
+        background-color: var(--yellow);
+        left: 40rem;
+        bottom: -10rem;
+        width: 22rem;
+        height: 22rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        filter: blur( 99px);
+        z-index: -4;
+        -webkit-filter: blur( 99px);
+}
