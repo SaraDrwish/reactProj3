@@ -4,6 +4,9 @@ import Intro from './Componants/Intro/Intro';
 import Serv from './Componants/Serv/Serv';
 import Exp from './Componants/Experience/Exp.jsx';
 import Works from './Componants/Works/Works';
+import Portofolio from './Componants/Portofolio/Portofolio';
+import Testimon from './Componants/Testimon/Testimon';
+
 
 function App() {
   return (
@@ -14,6 +17,8 @@ function App() {
         <Serv />
         <Exp />
         <Works />
+        <Portofolio />
+        <Testimon />
          
 
       </header>

@@ -7,7 +7,6 @@ import img4 from "../../img/play.png"
 import img5 from "../../img/suzuki.png"
 
 
-
 function Works() {
   return (
       <div className='works'>
@@ -49,11 +48,8 @@ function Works() {
               <div className="works-backCicl bluCircl"></div>
               <div className="works-backCicl orngCircl"></div>
               
-
           </div>
-
-
-      
+     
     </div>
   )
 }
