@@ -41,6 +41,7 @@ gap: 2rem;
     -moz-transition: all 0.4s ease-in;
     -ms-transition: all 0.4s ease-in;
     -o-transition: all 0.4s ease-in;
+    cursor: pointer;
 }
 .n-right .n-list > ul > li:hover{
     color: var(--oreng);

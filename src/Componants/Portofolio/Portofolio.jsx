@@ -16,7 +16,7 @@ function Portofolio() {
   const darkMode = theme.state.darkMode;
 
   return (
-      <div className='portofolio'>
+      <div className='portofolio' id='Portofolio'>
           <span className="recntProjs"  style={ {color: darkMode ? "white" : " "      } } > recent projects</span>
           <span className="porto"> Portofolio</span>
 

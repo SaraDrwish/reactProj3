@@ -14,9 +14,13 @@ import img1 from "../../img/r2.jpg"
  import { themeContext } from '../../Context';
 
 
+import { motion } from 'framer-motion';
+
+
 
 function Intro() {
 
+  const transition = { type: "spring", duration: 2 };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -46,14 +50,28 @@ function Intro() {
 
         <img className='mainImg' src={img1} alt="img1" />
         
-         <img src={imoji4} alt="img1" />
+        <motion.img
+          initial={{ left: "-1%" }}
+          whileInView={{ left: "4%" }}
+          transition={transition}
+          src={imoji4} alt="img1" />
         
-        <div className='floott'> 
+        <motion.div
+          
+          initial={{ top: "1%" , right: "5%" }}
+          whileInView={{ right: "11%" }}
+          transition={transition}
+
+          className='floott'> 
           <FlootingDiv image={imoji2}  txt1="web"  txt2="developer"  />
-        </div>
-         <div className='floott2'> 
+        </motion.div>
+        <motion.div
+          initial={{ bottom: "20%" , left: "4%" }}
+          whileInView={{ left: "0%" }}
+          transition={transition}
+          className='floott2'> 
           <FlootingDiv image={imoji1}  txt1="best design"  txt2="award"  />
-        </div>
+        </motion.div>
         <div className='blur1'  ></div>
         <div className=' blur2'  ></div>
          

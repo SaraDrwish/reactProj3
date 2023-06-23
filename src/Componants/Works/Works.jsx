@@ -6,10 +6,17 @@ import img3 from "../../img/payappl.png"
 import img4 from "../../img/play.png"
 import img5 from "../../img/suzuki.png"
 
+import { motion } from 'framer-motion'
+
+// import { Link } from 'react-scroll'
+
 
 function Works() {
+
+        const transition = { type: "spring", duration: 1 };
+
   return (
-      <div className='works'>
+      <div className='works' id='works'>
           <div className="left-works">
               <span >My Work</span>
               <span >Brands & Clints</span>
@@ -26,7 +33,14 @@ function Works() {
 
           <div className="right-works">
               
-              <div className="works-mainCircl">
+              <motion.div
+                  
+                  initial={{ rotate: 45 }}
+                  whileInView={{ rotate: 0 }}
+                  transition={transition}
+                  viewport={ {margin:"-11%"} }
+
+                  className="works-mainCircl">
                   
                   <div className="works-secndCircl">
                       <img src={img1} alt="" />
@@ -44,7 +58,8 @@ function Works() {
                       <img src={img5} alt="" />
                   </div>
                   
-              </div>
+              </motion.div>
+
               <div className="works-backCicl bluCircl"></div>
               <div className="works-backCicl orngCircl"></div>
               

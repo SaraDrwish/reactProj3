@@ -9,12 +9,19 @@ import cv from "../../Componants/Serv/CV_SAraDArwish_Front_2023_v6.pdf"
  import { themeContext } from '../../Context';
 import { useContext } from 'react';
 
+
+import { motion } from 'framer-motion';
+
+
 function Serv() {
-      const theme = useContext(themeContext);
+
+    const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
-    
+
+    const transition = { type: "spring", duration: 1 };
+
   return (
-      <div className='serv'>
+      <div className='serv' id='Serv'>
           
           {/* left side */}
           <div className='aesom'>
@@ -32,21 +39,40 @@ function Serv() {
 
           {/* right side */}
           <div className="cards">
-               <div className='cards-small-box' style={ {left:"16rem" , top:"0rem" } } >
+              <motion.div
+                  
+                  initial={{ left: "22rem" }}
+                  whileInView={{ left: "12rem" }}
+                  transition={transition}
+                  
+                  className='cards-small-box' style={{ left: "16rem", top: "0rem" }} >
                     <Card emoji={calm} heading={'design'}
                         detail= {'Figma , Adobe , photoshop '}
                     />
-                </div>  
-               <div className='cards-small-box' style={ {left:"10rem" , top:"21rem" } } >
+              </motion.div>  
+              
+              <motion.div
+                  initial={{ left: "22rem" }}
+                  whileInView={{ left: "18rem" }}
+                  transition={transition}
+                  className='cards-small-box' style={{ left: "10rem", top: "21rem" }} >
                         <Card emoji={tong} heading={'Developer'}
                         detail= {'HTML , CSS , JS , REACT JS , BOOTSTRAP '}
                         /> 
-                </div>  
-                <div className='cards-small-box' style={ {left:"-9rem" , top:"13rem"  } } >
+              </motion.div>  
+              
+              <motion.div
+                  
+                   initial={{ left: "-11rem" }}
+                  whileInView={{ left: "-8rem" }}
+                  transition={transition}
+                  
+                  className='cards-small-box' style={{ left: "-9rem", top: "13rem" }} >
                     <Card emoji={imoj} heading={'UI/UX'}
                         detail= {' lorem4 '}
                     />
-              </div> 
+              </motion.div>
+              
               <div className="blur3"   > </div>
 
           </div>
