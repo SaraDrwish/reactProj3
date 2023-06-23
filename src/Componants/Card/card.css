@@ -44,3 +44,24 @@ height: 4rem;
     color: var(--darkOrng);
     box-shadow: 1px 1px 4px var(--oreng);
 }
+
+
+
+
+
+/* ---------------------------------MEdia screens ===================================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+.card{
+    width: auto;
+}
+
+
+}
+
+
+

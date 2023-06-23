@@ -123,3 +123,35 @@ form span {
 
 
 
+
+/* ---------------------------------MEdia screens ===================================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+    .contact {
+         display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .contact form{
+        width: 100%;
+    }
+    .contact form button{
+        width: 70%;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
+ 
+
+
+}
+
+
+

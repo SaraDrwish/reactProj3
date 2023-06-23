@@ -137,3 +137,34 @@ color: var(--black);
     -ms-border-radius: 6rem;
     -o-border-radius: 6rem;
 }
+
+
+
+
+/* ---------------------------------MEdia screens ===================================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+.testimon{
+    padding: 0;
+ 
+}
+.testimon .testi-container {
+    padding: 1rem;
+    width: 100%;
+}
+.testimon > img{
+    width: 4rem;
+    height:4rem;
+}
+
+
+}
+
+
+
+
+

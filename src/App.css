@@ -69,3 +69,29 @@
     border: 1px solid var(--oreng);
     color: #ff7300;
   }
+
+
+
+/* ---------------------------------MEdia screens ===================================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+
+.App{
+  padding: 0.5rem;
+  font-size: small;
+ }
+
+
+
+
+
+
+  
+}
+
+
+

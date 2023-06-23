@@ -63,14 +63,14 @@ function Intro() {
           transition={transition}
 
           className='floott'> 
-          <FlootingDiv image={imoji2}  txt1="web"  txt2="developer"  />
+          <FlootingDiv image={imoji2}  txt1="web"  txt2="developer" className="FlootingDiv" />
         </motion.div>
         <motion.div
           initial={{ bottom: "20%" , left: "4%" }}
           whileInView={{ left: "0%" }}
           transition={transition}
           className='floott2'> 
-          <FlootingDiv image={imoji1}  txt1="best design"  txt2="award"  />
+          <FlootingDiv image={imoji1}  txt1="best design"  txt2="award"  className="FlootingDiv" />
         </motion.div>
         <div className='blur1'  ></div>
         <div className=' blur2'  ></div>

@@ -117,3 +117,44 @@ left: 9rem;
 
 
 
+
+
+/* ---------------------------------MEdia screens ===================================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+.works {
+    height: 44rem;
+        /* height: 11vh; */
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    gap: 4rem;
+ }
+ .right-works{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    right: 44%;
+}
+
+.works-mainCircl{
+    position: static;
+}
+.works-backCicl {
+    right: 1rem;
+}
+
+
+
+
+
+}

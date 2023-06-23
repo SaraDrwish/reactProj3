@@ -72,3 +72,43 @@
         z-index: -4;
         -webkit-filter: blur( 99px);
 }
+
+
+
+
+
+
+/* ---------------------------------MEdia screens ===================================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+
+   .serv {
+      margin: 0;
+      flex-direction: column;
+      gap: 4rem;
+      padding: 0;
+      height: 70rem;
+         /* height: 66vh; */
+    }
+    .serv button {
+      width: 60%;
+    }
+    .cards{
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
+      margin: 0;
+    }
+    .cards > * {
+      position: static;
+    }
+
+
+
+
+
+}

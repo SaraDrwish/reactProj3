@@ -61,3 +61,29 @@ gap: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
 } */
+
+
+
+
+/* ---------------------------------MEdia screens ===================================== */
+
+
+
+
+@media screen and (max-width:480px) {
+
+
+    .n-list {
+display: none;
+    }
+    .n-button{
+        display: none;
+    }
+
+
+
+
+
+
+
+}
