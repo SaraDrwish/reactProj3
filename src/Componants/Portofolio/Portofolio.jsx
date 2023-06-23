@@ -6,10 +6,18 @@ import imgSlid1 from "../../img/r5.jpg";
 import imgSlid2 from "../../img/r3.jpg";
 import imgSlid3 from "../../img/circlll.png";
 
+import { useContext } from 'react';
+import { themeContext } from '../../Context';
+ 
+
 function Portofolio() {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
       <div className='portofolio'>
-          <span className="recntProjs"> recent projects</span>
+          <span className="recntProjs"  style={ {color: darkMode ? "white" : " "      } } > recent projects</span>
           <span className="porto"> Portofolio</span>
 
           {/* <div className="slideer-container"> */}

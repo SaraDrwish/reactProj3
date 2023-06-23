@@ -6,14 +6,19 @@ import calm from "../../img/cvcvcv.png";
 import tong from "../../img/tong.png"
 import imoj from "../../img/azazaz.png"
 import cv from "../../Componants/Serv/CV_SAraDArwish_Front_2023_v6.pdf"
+ import { themeContext } from '../../Context';
+import { useContext } from 'react';
 
 function Serv() {
+      const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
+    
   return (
       <div className='serv'>
           
           {/* left side */}
           <div className='aesom'>
-              <span>My Awesome</span>
+              <span  style={ {color: darkMode ? "white" : " "      } } >My Awesome</span>
               <span>Services</span>
               <span>Lorem, ipsum dolor sit amet consecteturdolor sit 
                   amet consturdolor sit amet consectetur elit. 

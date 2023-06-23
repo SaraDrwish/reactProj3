@@ -10,7 +10,18 @@ import clint2img from "../../img/pokim.jpg";
 import { Pagination } from 'swiper';
 import "swiper/css/pagination";
 
+
+import { useContext } from 'react';
+import { themeContext } from '../../Context';
+
+
+
 function Testimon() {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
+
   const clints = [
     {
       img: clint1img ,
@@ -36,9 +47,9 @@ function Testimon() {
       
       <div className="testi-container">
               <div className="testi-titles">
-                  <span> Clints always get </span>
+                  <span  style={ {color: darkMode ? "white" : " "      } } > Clints always get </span>
                   <span> Exceptional work </span>
-                  <span> from me .. </span>
+                  <span  style={ {color: darkMode ? "white" : " "      } } > from me .. </span>
                   <div className="blur"></div>
                   <div className="blur"></div>
                   <div className="blur"></div>

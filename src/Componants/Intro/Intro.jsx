@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,  { useContext } from 'react'
 import "./intro.css";
 import FlootingDiv from '../FlootingDiv/FlootingDiv';
 import git from "../../img/orange soical icons/light-orng-git-icon.png";
@@ -11,12 +11,21 @@ import imoji4 from "../../img/clclcl.png";
 import img1 from "../../img/r2.jpg"
 
 
+ import { themeContext } from '../../Context';
+
+
+
 function Intro() {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
-    <div className='intro'>
+    <div className='intro'   >
       <div className='intro-left'>
         <div className='intro-name'>
-          <span> Hi! I Am </span>
+          <span
+            style={ {color: darkMode ? "white" : " "      } } >    Hi! I Am </span>
           <span> Sara Darwish </span>
           <span> ..  A web developer with high level of experience , producting the quality work  ... ... </span>
         </div> {/* end iintro-name*/}

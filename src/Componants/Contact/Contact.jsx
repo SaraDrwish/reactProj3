@@ -1,7 +1,7 @@
 import React , { useRef, useState } from 'react';
 import "./contact.css";
 import emailjs from '@emailjs/browser';
-
+import { useForm } from 'react-hook-form';
 
 function Contact() {
 
@@ -11,16 +11,22 @@ function Contact() {
     const form = useRef();
     
     const [done, setDone] = useState(false);
-    const [clear, setClear] = useState(" ");
+    // const [clearInput, setClearInput] = useState(" ");
+    // const { reset } = useForm;
+    
+    // const hundelClear = (e) => {
 
-  const sendEmail = (e) => {
+    //  }
+
+    const sendEmail = (e) => {
+      
     e.preventDefault();
-
-    emailjs.sendForm('service_njoiiuf', 'template_dugg5bs', form.current, 'XekGWAkZmKhy1iUW5')
-      .then((result) => {
-          console.log(result.text);
+     emailjs.sendForm('service_njoiiuf', 'template_dugg5bs', form.current, 'XekGWAkZmKhy1iUW5')
+        .then((result) => {
+        //   clearInput = " "
+             console.log(result.text);
             setDone(true)
-      }, (error) => {
+       }, (error) => {
           console.log(error.text);
       });
   };
@@ -32,7 +38,6 @@ function Contact() {
   return (
       <div className='contact'>
           
-          
           <div className="cont-left">
               <span>Get in touch </span>
                <span> contact me </span>
@@ -40,22 +45,35 @@ function Contact() {
           </div>
 
           <div className="cont-right">
-              <form ref={form} onSubmit={sendEmail}>
-                  <input  onChange={e=>{
-                     setClear(e.target.value)
-                  }}
-                      type="text" name='userName' className='user' placeholder='Name' />
-                  <input type="email" name="userEmail"   className='email' placeholder='Email' />
-                  <textarea name="texteria" className='texteria' cols="20" rows="8" placeholder='Message'></textarea>
+              
+              <form ref={form} onSubmit={sendEmail}   >
+                  
+                  <input
+                  
+                //       onChange={e => {
+                //      setClearInput(e.target.value)
+                //   }}
+                      
+                      type="text" name='userName' className='user' placeholder='Name'   id='name'    />
+                  
+
+                  <input   
+                    //   onChange={e => {
+                    //       setClearInput(e.target.value)
+                    //   }}
+                      type="email" name="userEmail" className='email' placeholder='Email'  id='email'  />
+                  
+                  <textarea name="texteria" className='texteria' cols="20" rows="8" placeholder='Message'  ></textarea>
                   {/* <input type="submit" value="send" className='button' /> */}
                   <button
                       
-                      onClick={() => {
-                        //   clear
-                      }}
+                    //   onClick={() => {
+                          
+                    //    }}
 
-                      type='submit' value="send" className='btn' > Send </button>
-                  <span> {done&&"Thanks for Contact me,I'll replay you soon"} </span>
+
+                      type='submit' value="send" className='btn'  > Send </button>
+                  <span> { done && "Thanks for Contact me,I'll replay you soon" } </span>
                   <div className="blur"></div>
               </form>
           </div>

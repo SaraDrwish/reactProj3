@@ -26,8 +26,9 @@ function App() {
         {
 
           background: darkMode ? "black" : " ",
-          color : darkMode ? "white" : ""
-
+          color: darkMode ? "white" : " " ,
+          fill: darkMode ? "white" : " " 
+          
         }
     }
     

@@ -11,9 +11,9 @@ function Works() {
   return (
       <div className='works'>
           <div className="left-works">
-              <span>My Work</span>
-              <span>Brands & Clints</span>
-              <span>Lorem, ipsum dolor sit amet consecteturdolor sit 
+              <span >My Work</span>
+              <span >Brands & Clints</span>
+              <span >Lorem, ipsum dolor sit amet consecteturdolor sit 
                   amet consturdolor sit amet consectetur elit. 
               <br></br>
                   Lorem ipsum dolor sit.
