@@ -117,16 +117,16 @@ color: var(--black);
     background-color: var(--pep);
     left: 70rem;
     top: -6rem;
-     width: 30rem;
+    width: 30rem;
     height: 30rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    filter: blur(199px);
+    filter: blur(288px);
     z-index: -4;
-    -webkit-filter: blur(199px);
+    -webkit-filter: blur(288px);
 }
 .testimon img {
     width: 11rem;

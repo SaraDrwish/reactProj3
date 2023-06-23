@@ -159,11 +159,11 @@ top: 0;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    filter: blur(122px);
+    filter: blur(155px);
     z-index: -4;
     right: -6%;
     top: -8%;
-    -webkit-filter: blur(122px);
+    -webkit-filter: blur(155px);
 }
 .blur2{
      position: absolute;
@@ -172,7 +172,8 @@ top: 0;
      border-radius: 50%;
      z-index: -4;
      background-color: var(--blue);
-     left: -33%;
+     /* left: -33%;*/
+        left: -6%;
      bottom: -11%;
      filter: blur(99px);
      -webkit-filter: blur(99px);
