@@ -42,6 +42,7 @@
   overflow: hidden;
   color: var(--black);
   text-transform: capitalize;
+  margin: 0 0 -4% 0;
 }
 
 
