@@ -5,17 +5,17 @@ function Exp() {
   return (
     <div className='Exp'>
       <div className="schev">
-        <div className="circl">8+</div>
+        <div className="circl">3+</div>
         <span>years</span>
         <span>experience</span>
       </div>
       <div className="schev">
-        <div className="circl">4+</div>
+        <div className="circl">12+</div>
         <span>completed</span>
         <span>projects</span>
       </div>
       <div className="schev">
-        <div className="circl">6+</div>
+        <div className="circl">4+</div>
         <span>compaines</span>
         <span>work</span>
       </div>

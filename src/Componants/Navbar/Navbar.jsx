@@ -1,5 +1,7 @@
 import React from 'react';
 import "./navbar.css";
+import Toggle from '../Toggle/Toggle';
+
 
 function Navbar() {
   return (
@@ -7,7 +9,8 @@ function Navbar() {
           
           <div className='n-left'>
               <div className='n-logo'>Sara</div>
-              <span>tpggle</span>
+              {/* <span>tpggle</span> */}
+              <Toggle/>
           </div>
           <div className='n-right'>
               <div className='n-list'>

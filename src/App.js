@@ -8,10 +8,31 @@ import Portofolio from './Componants/Portofolio/Portofolio';
 import Testimon from './Componants/Testimon/Testimon';
 import Contact from './Componants/Contact/Contact';
 import Footer from './Componants/Footer/Footer';
+import { useContext } from 'react';
+import { themeContext } from './Context';
+
+
 
 function App() {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
-    <div className="App">
+    <div className="App"
+    
+      style={
+      
+        {
+
+          background: darkMode ? "black" : " ",
+          color : darkMode ? "white" : ""
+
+        }
+    }
+    
+    >
+      
       <header className="App-header">
 
           <Navbar />
