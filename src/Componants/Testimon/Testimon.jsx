@@ -2,10 +2,11 @@ import React from 'react';
 import "./testimon.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import clint1img from "../../img/carfor.png";
-import clint0img from "../../img/polo.png";
-import clint3img from "../../img/suzuki.png";
-import clint2img from "../../img/arowLeft.png";
+import  clint3img from "../../img/zxzx.png";
+import clint0img from "../../img/hratimoj.png";
+import clint1img from "../../img/pokymon.png";
+import clint2img from "../../img/pokim.jpg";
+// import clint4img from "../../img/smileimoji.png";
 import { Pagination } from 'swiper';
 import "swiper/css/pagination";
 
