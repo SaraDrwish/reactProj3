@@ -4,7 +4,6 @@ import Toggle from '../Toggle/Toggle';
 
 import { Link } from 'react-scroll'
 
-
 function Navbar() {
   return (
       <div className='n-porto' id='Navbar'>
